@@ -5,10 +5,7 @@ import { io, Socket } from "socket.io-client";
 
 const backEndUrl = import.meta.env.VITE_BACKEND_URL;
 
-const BASE_URL =
-  import.meta.env.VITE_MODE === "development"
-    ? backEndUrl
-    : "http://localhost:5000/api";
+const BASE_URL = import.meta.env.VITE_MODE === "development" ? backEndUrl : "/";
 
 // const BASE_URL = "http://localhost:5000/api";
 
